@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="musicPlayerCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo ">
+            <span class="l1">my</span><span class="l2">MusicPLayer</span><span class="l3">.com</span>
+        </div>
+        <div class="nav2">
+            <div class="search-box ">
+                <input type="text" placeholder="search for music....">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass search-btn"></i></button>
+            </div>
+            <div class="settings " >
+                <i class="fa-solid fa-bars ham"></i>
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                <div class="setting-menu ">
+                    <div class="setting-menu-1">songs</div>
+                    <div class="setting-menu-2">create playlist</div>
+                    <div class="setting-menu-3">your playlist</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="main-content">
+        <div class="content-box">
+            <div class="content-box-1">
+                <div class="songlist1">
+                    <div>no maching song found</div>
+                    <button id="back">go back</button>
+                </div>
+           <div class="songlist" id="0">
+                <span class="songName">Shanivaar Raati</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play  " ></i></span>
+                <audio class="s1 songs">
+                    <source src="staticFiles/03 Shanivaar Raati - Main Tera Hero - 320Kbps.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="songlist" id="1">
+                <span class="songName">Paintra</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play" ></i></span>
+                <audio class="s2 songs">
+                    <source src="staticFiles/01 Paintra - Mukkabaaz (Nucleya) 320Kbps.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="songlist" id="2">
+                <span class="songName">Tum hi ho</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play  "></i></span>
+                <audio class="s3 songs">
+                    <source src="staticFiles/01 Tum Hi Ho - Aashiqui 2 (Arijit Singh) 320Kbps.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="songlist" id="3">
+                <span class="songName">kar har maidaan fateh</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play "></i></span>
+                <audio class="s4 songs">
+                    <source src="staticFiles/02 Kar Har Maidaan Fateh - Sanju.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="songlist" id="4">
+                <span class="songName">Mere mehboob qayamat hogi</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play "></i></span>
+                <audio class="s5 songs">
+                    <source src="staticFiles/01. Mere Mehboob Qayamat Hogi-I.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="songlist" id="5">
+                <span class="songName">Ban ja rani</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play "></i></span>
+                <audio class="s6 songs">
+                    <source src="staticFiles/01 Ban Ja Rani - Tumhari Sulu.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="songlist" id="6">
+                <span class="songName">Galat baat hai</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play "></i></span>
+                <audio class="s7 songs">
+                    <source src="staticFiles/04 Galat Baat Hai - Main Tera Hero [Javed Ali] 190Kbps.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="songlist" id="7">
+                <span class="songName">Tu hi hai</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play "></i></span>
+                <audio class="s8 songs">
+                    <source src="staticFiles/04 Tu Hi Hai (Rahul Mishra) 190Kbps.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="songlist" id="8">
+                <span class="songName">Kala Chasma</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play "></i></span>
+                <audio class="s9 songs">
+                    <source src="staticFiles/Kala Chasma - Dr Zeus (Original).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="songlist" id="9">
+                <span class="songName">Bijlee Bijlee</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play "></i></span>
+                <audio class="s10 songs">
+                    <source src="staticFiles/Bijlee Bijlee - Harrdy Sandhu 320 Kbps.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="songlist" id="10">
+                <span class="songName">Believer</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play "></i></span>
+                <audio class="s11 songs">
+                    <source src="staticFiles/Believer Mp3 Imagine Dragons.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="songlist" id="11">
+                <span class="songName">Born To Shine</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play "></i></span>
+                <audio class="s10 songs">
+                    <source src="staticFiles/Born To Shine(PagalWorld).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="songlist" id="12">
+                <span class="songName">Left Right</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play "></i></span>
+                <audio class="s10 songs">
+                    <source src="staticFiles/Kamar Teri Left Right(PagalWorld).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="songlist" id="13">
+                <span class="songName">Gulabi Sharara</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play "></i></span>
+                <audio class="s10 songs">
+                    <source src="staticFiles/Gulabi Sharara-(PagalWorld).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="songlist" id="14">
+                <span class="songName">One Bottle Down</span>
+                <span class="songDuration"></span>
+                <span class="songList-icon"><i  class="fa-regular fa-circle-play "></i></span>
+                <audio class="s10 songs">
+                    <source src="staticFiles/One Bottle Down - Yo Yo Honey Singh.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            </div>
+        </div>
+        <div class="bottom-music-bar">
+            <div class="current-song-info">
+                <img src="staticFiles/songplay.gif" alt="gif" class="gif">
+                <div class="currentSongName">
+
+                </div>
+            </div>
+            <div class="controls">
+                <input type="range" min="0" value="0" max="100" class="range">
+                <div class="control-icons">
+                    <i class="fa-solid fa-backward icons" id="previous"></i>
+                    <i  class="fa-regular fa-circle-play  icons" id="playicon"></i>
+                    <!-- <i class="fa-regular fa-circle-pause icons"></i> -->
+                    <i class="fa-solid fa-forward icons" id="forward"></i>
+                </div>
+                <div class="auto-change">
+                    <i class="fa-solid fa-repeat"></i><span>1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="musicJs.js"></script>
+</body>
+</html>
